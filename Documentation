@@ -1,0 +1,35 @@
+## Documentation ##
+1. Source Code and Test Files
+   Source Code: The library_system.cpp file contains the complete implementation of the Online Library Management System. 
+   It includes the Book, User, and Library classes, and a main function that provides an interactive menu for system testing.
+   Test Files: The application features an interactive menu that the user easily intercts with.
+2. OOP Principles:
+   a. Encapsulation: Variables like id, title, author, and isBorrowed in the Book class, and id, name, and borrowedBooks in the User class are kept public for simplicity's sake to allow direct access while still grouping related data and behaviors into classes.
+   b. Modularity: The Library class manages all operations (adding/removing books/users, borrowing/returning books, searching), while Book and User handle their own data, respectively, in favor of modularity.
+   c. Simplicity: Use of vector for storing books and users keeps the implementation straightforward.
+3. Functionalities:
+   Adding and Removing Books: Achieved using addBook() and removeBook(), with checks to ensure the presence of a book before removing it.
+   Searching Books: searchTitle() and searchAuthor() offer the capability to search by title or author and return all the matching books.
+   Managing User Accounts: addUser() introduces new users, borrowBook() and returnBook() handle borrowing and returning with checks for availability.
+4. Interactivity: 
+   The menu-driven interface in main() allows real-time testing of all the features.
+5. Test Coverage:
+   Positive Scenarios: Adding a book/user, borrowing an available book, returning a borrowed book.
+   Negative Scenarios: Attempting to remove a book that doesn't exist, borrowing a book that is already borrowed, or returning a book that hasn't been borrowed by the user. These are checked through user inputs and response messages.
+6. Instructions to Execute the Program and Tests
+   Requirements: C++ compiler (e.g., g++ on Linux/Mac or MinGW on Windows).
+Steps:
+Open the terminal and navigate to the file directory.
+Compile the code: c++ library_system.cpp -o library_system
+Run the program: ./library_system (or library_system.exe for Windows).
+Using the Menu:
+The program displays a menu with options 1–9.
+Enter the number of the action (e.g., 1 to add a book, 6 to borrow a book).
+Follow the prompts to input data (e.g., book ID, title, author for adding a book).
+Test several scenarios by attempting valid and invalid inputs (e.g., borrow a book twice to observe the "Borrow failed" message).
+Exit using option 9 when finished.
+Testing: Utilize the menu to carry out a range of operations. For instance:
+Insert a book (option 1) and a user (option 5).
+Borrow the book (option 6) and return it (option 7).
+Search for the book (options 3 or 4) and attempt to delete it (option 2).
+Test each cases such as invalid IDs or books not available.
