@@ -9,7 +9,7 @@ This is a c++ project for BSD 122 Object oriented proggramming 1 assignment tha 
 
 # How to run
  1. Complile C++ library_system.cpp -o library_system
- 2. Run ./Library_system
+ 2. Run ./Library_system.cpp
  3. Use the menu system to test
 
 #Documentation
